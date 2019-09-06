@@ -1,3 +1,12 @@
-## JPA CRUD PROJECT
+## Sping/MVC JPA CRUD Project
 
-### WEEK 9 HOMEWORK FOR SKILL DISTILLERY
+Individual homework for Skill Distillery
+week 9
+
+### Overview
+
+### How to Use
+
+### Technologies Used
+
+### Lessons Learned
