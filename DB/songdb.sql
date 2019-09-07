@@ -28,6 +28,7 @@ CREATE TABLE IF NOT EXISTS `song` (
   `language_id` INT(3) NOT NULL,
   `genre_id` INT(3) NOT NULL,
   `cost_amount` DECIMAL(5,2) NOT NULL,
+  `release_year` INT(4) NOT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
@@ -47,8 +48,8 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `songdb`;
-INSERT INTO `song` (`id`, `title`, `length`, `lyrics`, `language_id`, `genre_id`, `cost_amount`) VALUES (1, 'goober', 5.29, 'gooberish-ish baby', 1, 2, 2.99);
-INSERT INTO `song` (`id`, `title`, `length`, `lyrics`, `language_id`, `genre_id`, `cost_amount`) VALUES (2, 'foobie', 3.21, 'fooberish-ish baby', 2, 3, 3.99);
+INSERT INTO `song` (`id`, `title`, `length`, `lyrics`, `language_id`, `genre_id`, `cost_amount`, `release_year`) VALUES (1, 'goober', 5.29, 'gooberish-ish baby', 1, 2, 2.99, 2019);
+INSERT INTO `song` (`id`, `title`, `length`, `lyrics`, `language_id`, `genre_id`, `cost_amount`, `release_year`) VALUES (2, 'foobie', 3.21, 'fooberish-ish baby', 2, 3, 3.99, 2018);
 
 COMMIT;
 
