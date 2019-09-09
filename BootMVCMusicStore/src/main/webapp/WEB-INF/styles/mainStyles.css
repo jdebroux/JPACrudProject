@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+.mainBackground { 
+background-image: linear-gradient(to right, fuchsia, lime);
+}
+.mainBackground2 { 
+background-image: linear-gradient(to right, lime, fuchsia);
+}

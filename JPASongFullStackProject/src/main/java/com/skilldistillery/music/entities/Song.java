@@ -23,10 +23,14 @@ public class Song {
 	private Double costAmount;
 	@Column(name = "release_year")
 	private Integer releaseYear;
+	private String artist;
+	private String album;
 
-	public Song() {}
-	
-	public Song(String title, Double length, String lyrics, Integer languageId, Integer genreId, Double costAmount, Integer releaseYear) {
+	public Song() {
+	}
+
+	public Song(String title, Double length, String lyrics, Integer languageId, Integer genreId, Double costAmount,
+			Integer releaseYear, String artist, String album) {
 		this.title = title;
 		this.length = length;
 		this.lyrics = lyrics;
@@ -34,6 +38,8 @@ public class Song {
 		this.genreId = genreId;
 		this.costAmount = costAmount;
 		this.releaseYear = releaseYear;
+		this.artist = artist;
+		this.album = album;
 	}
 
 	public int getId() {
@@ -100,10 +106,26 @@ public class Song {
 		this.releaseYear = releaseYear;
 	}
 
+	public String getArtist() {
+		return artist;
+	}
+
+	public void setArtist(String artist) {
+		this.artist = artist;
+	}
+
+	public String getAlbum() {
+		return album;
+	}
+
+	public void setAlbum(String album) {
+		this.album = album;
+	}
+
 	@Override
 	public String toString() {
 		return "Song [id=" + id + ", title=" + title + ", length=" + length + ", lyrics=" + lyrics + ", languageId="
 				+ languageId + ", genreId=" + genreId + ", costAmount=" + costAmount + ", releaseYear=" + releaseYear
-				+ "]";
+				+ ", artist=" + artist + ", album=" + album + "]";
 	}
 }

@@ -51,7 +51,9 @@ public class SongTest {
 		assertEquals(1, song.getLanguageId());
 		assertEquals("gooberish-ish baby", song.getLyrics());
 		assertEquals(5.29, song.getLength());
-		assertEquals("goober", song.getTitle());
+		assertEquals("Goober", song.getTitle());
 		assertEquals(2019, song.getReleaseYear());
+		assertEquals("Goobettes", song.getArtist());
+		assertEquals("Let it Roll", song.getAlbum());
 	}
 }
